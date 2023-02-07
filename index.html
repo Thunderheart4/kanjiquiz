@@ -1,0 +1,118 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quiz</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<body>
+  <div style="height: 470px; background-color: transparent;" class="col-6 mx-auto">
+    <div style="height: 470px" class="col-12 bg-warning v1">
+      <img src="hito.jpg" class="h-75 mt-2" style="margin-left: 80px;">
+      <div style="height: 70px;" class="bg-success mt-4">
+        <div style="height: 30px" class="col-12 bg-primary">
+          <p class="text-center">Что это за иероглиф?
+          </p>
+        </div>
+        <div style="height: 40px" class="d-flex col-12 bg-light">
+          <div style="height: 40px" class="col-4 border v11">
+            <p class="text-center">Человек
+            </p>
+          </div>
+          <div style="height: 40px" class="col-4 border v12">
+            <p class="text-center">Палатка
+            </p>
+          </div>
+          <div style="height: 40px" class="col-4 border v13">
+            <p class="text-center">Палочки для еды
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="height: 470px; display: none;" class="col-12 bg-warning v2">
+      <img src="ki.jpg" class="h-75 mt-2" style="margin-left: 90px;">
+      <div style="height: 70px;" class="bg-success mt-4">
+        <div style="height: 30px" class="col-12 bg-primary">
+          <p class="text-center">Что это за иероглиф?
+          </p>
+        </div>
+        <div style="height: 40px" class="d-flex col-12 bg-light">
+          <div style="height: 40px" class="col-4 border v21">
+            <p class="text-center">Дом
+            </p>
+          </div>
+          <div style="height: 40px" class="col-4 border v22">
+            <p class="text-center">Вешалка
+            </p>
+          </div>
+          <div style="height: 40px" class="col-4 border v23">
+            <p class="text-center">Дерево
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="height: 470px; display: none;" class="col-12 bg-warning v3">
+      <img src="yasumi.png" class="h-75 mt-2" style="margin-left: 90px;">
+      <div style="height: 70px;" class="bg-success mt-4">
+        <div style="height: 30px" class="col-12 bg-primary">
+          <p class="text-center">Что это за иероглиф?
+          </p>
+        </div>
+        <div style="height: 40px" class="d-flex col-12 bg-light">
+          <div style="height: 40px" class="col-4 border v31">
+            <p class="text-center">Сажать (растение)
+            </p>
+          </div>
+          <div style="height: 40px" class="col-4 border v32">
+            <p class="text-center">Отдыхать
+            </p>
+          </div>
+          <div style="height: 40px" class="col-4 border v33">
+            <p class="text-center">Собирать (плоды)
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    document.querySelector('.v11').onclick=function(){
+      alert("Правильно")
+      document.querySelector('.v2').style.display="block"
+      document.querySelector('.v1').style.display="none"
+    }
+    document.querySelector('.v12').onclick=function(){
+      alert("Неправильно")
+    }
+    document.querySelector('.v13').onclick=function(){
+      alert("Неправильно")
+    }
+
+    document.querySelector('.v21').onclick=function(){
+      alert("Неправильно")
+    }
+    document.querySelector('.v22').onclick=function(){
+      alert("Неправильно")
+    }
+    document.querySelector('.v23').onclick=function(){
+      alert("Правильно")
+      document.querySelector('.v3').style.display="block"
+      document.querySelector('.v2').style.display="none"
+    }
+
+    document.querySelector('.v31').onclick=function(){
+      alert("Неправильно")
+    }
+    document.querySelector('.v32').onclick=function(){
+      alert("Правильно. Вы прошли")
+      document.querySelector('.v3').style.display="none"
+    }
+    document.querySelector('.v33').onclick=function(){
+      alert("Неправильно")
+    }
+  </script>
+</body>
